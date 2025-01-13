@@ -51,3 +51,33 @@
     border: 2px solid #e5e5e5;
     border-radius: 3px;
 }
+.paraHead {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+.divTermCond {
+    display: flex;
+}
+.checkbox {
+    border: 2px solid #e5e5e5;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.paraTerm {
+    font-size: 14px;
+    color: #444444;
+    margin-top: 15px;
+    font-weight: 450;
+}
+.submitBtn {
+    height: 35px;
+    width: 405px;
+    background-color: #1ea69a;
+    color: #fff;
+    padding: 5px;
+    margin-top: 15px;
+}
+.submitBtn:hover {
+    background-color: #127169;
+}
