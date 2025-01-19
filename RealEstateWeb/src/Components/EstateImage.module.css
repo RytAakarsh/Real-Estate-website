@@ -1,0 +1,14 @@
+.propertyBox {
+    height: 624px;
+    width: 450px;
+    margin: 80px;
+    background-color: #bfbfbf;
+    border-radius: 3px;
+}
+.propertyBox h2 {
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
