@@ -8,7 +8,8 @@ import '@fortawesome/fontawesome-free/css/all.css';
 function App() {
   const [count, setCount] = useState(0)
   const propertyComp1 = [
-   {
+   { 
+     image: "https://modern.b-cdn.net/wp-content/uploads/2017/06/exterior-05-488x326.jpg",
      title : "Home in Merrick Way",
      location : "Merrick Way, Miami,FL 33134,USA",
      Sq: "4300",
@@ -17,6 +18,7 @@ function App() {
   ];
   const propertyComp2 = [
     {
+      image: "https://modern.b-cdn.net/wp-content/uploads/2017/06/exterior-04-488x326.jpg",
       title : "Villa in Coral Gables",
       location : "13621 Deering Bay Drive, Coral Gables, USA",
       Sq: "3500",
@@ -25,6 +27,7 @@ function App() {
    ];
    const propertyComp3 = [
     {
+      image: "https://modern.b-cdn.net/wp-content/uploads/2020/06/bunglow-01-488x326.jpg",
       title : "Villa on Grand Avenue",
       location : "3015 Grand Avenue, Miami, FL, USA",
       Sq: "9300",
@@ -35,8 +38,11 @@ function App() {
     <>
       <MainDiv></MainDiv>
       <EstateDisplay></EstateDisplay>
+      <div className="propertyBox">
       <EstateImage component={propertyComp1}> </EstateImage>
-
+      <EstateImage component={propertyComp2}></EstateImage>
+      <EstateImage component={propertyComp3}></EstateImage>
+      </div>
     </>
   )
 }
