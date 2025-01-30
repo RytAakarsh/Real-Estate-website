@@ -36,6 +36,20 @@ function App() {
     }
    ];
     
+   const component1 = [
+    {
+      Heading1: "Recent",
+      Heading2: "Properties",
+      Para: "Checkout our some of our latest properties"
+    }
+ ]
+ const component2 = [
+    {
+      Heading1: "Featured",
+      Heading2: "Properties",
+      Para: "View list of our short listed properties"
+    }
+ ]
    
     const btnPressPrev = () => {
      let box = document.querySelector('.propertyContainer');
@@ -53,7 +67,7 @@ function App() {
   return (     
     <>
       <MainDiv></MainDiv>
-      <EstateDisplay></EstateDisplay>
+      <EstateDisplay Display={component1}></EstateDisplay>
       
     
       <div className="propertyBox">
@@ -75,7 +89,7 @@ function App() {
 
     </div>
 
-
+    <EstateDisplay Display={component2}></EstateDisplay>
     
     
     </>

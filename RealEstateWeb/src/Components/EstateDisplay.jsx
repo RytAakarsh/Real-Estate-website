@@ -1,8 +1,9 @@
 import EDHeading from "./EDHeading";
-function EstateDisplay () {
+function EstateDisplay ({Display}) {
+  
    return (
     <div>
-         <EDHeading></EDHeading>  
+         <EDHeading Display={Display}></EDHeading> 
     </div>
    )
 }
