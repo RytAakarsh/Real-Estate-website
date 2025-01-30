@@ -5,6 +5,7 @@ import EstateDisplay from './Components/EstateDisplay'
 import EstateImage from './Components/EstateImage'
 import '@fortawesome/fontawesome-free/css/all.css';
 
+
 function App() {
   const [count, setCount] = useState(0)
   const propertyComp1 = [
@@ -34,15 +35,49 @@ function App() {
       price: "$950,000"
     }
    ];
-  return (
+    
+   
+    const btnPressPrev = () => {
+     let box = document.querySelector('.propertyContainer');
+     let width = box.clientWidth;
+     box.scrollLeft = box.scrollLeft - width;
+    }
+
+    const btnPressNxt = () => {
+      let box = document.querySelector('.propertyContainer');
+      let width = box.clientWidth;
+      box.scrollLeft = box.scrollLeft + width;
+    }
+  
+
+  return (     
     <>
       <MainDiv></MainDiv>
       <EstateDisplay></EstateDisplay>
+      
+    
       <div className="propertyBox">
+
+    
+    <div className="propertyCarousel">
+    <button className='btnPre' onClick={btnPressPrev}> <i class="fa-solid fa-caret-left" style={{color: "#0d0f11"}}></i> </button>
+    <button className='btnNxt' onClick={btnPressNxt}> <i class="fa-solid fa-caret-right" style={{color: "#0d0f11"}}></i> </button>
+    </div>
+  
+      <div className="propertyContainer">
+      <EstateImage component={propertyComp1}> </EstateImage>
+      <EstateImage component={propertyComp2}></EstateImage>
+      <EstateImage component={propertyComp3}></EstateImage>
       <EstateImage component={propertyComp1}> </EstateImage>
       <EstateImage component={propertyComp2}></EstateImage>
       <EstateImage component={propertyComp3}></EstateImage>
       </div>
+
+    </div>
+
+
+    
+    
     </>
   )
 }
