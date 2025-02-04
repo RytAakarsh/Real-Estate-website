@@ -14,7 +14,7 @@ function EstateImage({ component }) {
             <br></br>
             <span className={styles.logos}> <i class="fa-solid fa-bed"></i></span> <span className={styles.logos}> <i class="fa-solid fa-shower"></i> </span> <span className={styles.logos}> <i class="fa-thin fa-square"></i> </span> <span className={styles.area}> {property.Sq} sq. ft.</span>
         <p className={styles.price}> {property.price}</p>
-        <b className={styles.lastlogo}> <i class="fa-solid fa-heart ml-80 text-[25px]" style={{color: "#000000"}}></i></b> 
+        <b className={styles.lastlogo}> <i class="fa-solid fa-heart ml-72 text-[25px]" style={{color: "#000000"}}></i></b> 
         <b className={styles.lastlogo}> <i class="fa-solid fa-code-compare text-[25px]" style={{color: "#000000"}}></i></b>
         
           </div>
