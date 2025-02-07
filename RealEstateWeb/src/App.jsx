@@ -7,6 +7,7 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import SpecialContainer from './Components/specialContainer'
 import AgentsDisplay from './Components/AgentsDisplay'
 import Features from './Components/Features'
+import Partners from './Components/Partners'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -64,6 +65,13 @@ function App() {
     Heading1: "Amazing",
     Heading2: "Features",
     Para: "Test featured from elementor"
+  }
+ ]
+ const component5 = [
+  {
+    Heading1: "Our",
+    Heading2: "Partners",
+    Para: "We honoured to have these amazing partners"
   }
  ]
 
@@ -201,7 +209,32 @@ function App() {
         para: "Real Homes provides front end property submit template and related configurations. So you can restrict certain level of users from accessing administrator dashboard."
       }
     ]
-
+    
+    const partner1 = [
+      {
+        image: "https://modern.b-cdn.net/wp-content/uploads/2017/06/one.png"
+      }
+    ]
+    const partner2 = [
+      {
+        image: "https://modern.b-cdn.net/wp-content/uploads/2017/06/two.png"
+      }
+    ]
+    const partner3 = [
+      {
+        image: "https://modern.b-cdn.net/wp-content/uploads/2017/06/three.png"
+      }
+    ]
+    const partner4 = [
+      {
+        image: "https://modern.b-cdn.net/wp-content/uploads/2017/06/four.png"
+      }
+    ]
+    const partner5 = [
+      {
+        image: "https://modern.b-cdn.net/wp-content/uploads/2017/06/five.png"
+      }
+    ]
 
 
   return (     
@@ -263,6 +296,18 @@ function App() {
     <Features component={feature5}></Features>
     <Features component={feature6}></Features>
   </div>
+  
+
+  <EstateDisplay Display={component5}></EstateDisplay>
+  
+  <div className="partners">
+     <Partners component={partner1}></Partners>
+     <Partners component={partner2}></Partners>
+     <Partners component={partner3}></Partners>
+     <Partners component={partner4}></Partners>
+     <Partners component={partner5}></Partners>
+  </div>
+
 
     </>
   )
