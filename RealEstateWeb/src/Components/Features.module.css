@@ -1,0 +1,28 @@
+.mainDiv {
+    height: 251px;
+    width: 394px;
+    position: relative;
+}
+.mainDiv .image {
+    margin-top: 40px;
+   position: relative;
+   left: 35%;
+   height: 80px;
+   width: 100px;
+   margin-bottom: 20px;
+}
+.mainDiv .name {
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+    color: #1a1a1a;
+    font-weight: bold;
+}
+.mainDiv .para {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: #808080;
+    text-align: center;
+    margin-top: 30px;
+}

@@ -6,6 +6,7 @@ import EstateImage from './Components/EstateImage'
 import '@fortawesome/fontawesome-free/css/all.css';
 import SpecialContainer from './Components/specialContainer'
 import AgentsDisplay from './Components/AgentsDisplay'
+import Features from './Components/Features'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -56,6 +57,13 @@ function App() {
     Heading1: "Meet",
     Heading2: "Our Agents",
     Para: "Get in touch with our real estate experts"
+  }
+ ]
+ const component4 = [
+  {
+    Heading1: "Amazing",
+    Heading2: "Features",
+    Para: "Test featured from elementor"
   }
  ]
 
@@ -151,6 +159,51 @@ function App() {
       }
     ]
 
+    const feature1 = [
+      {
+        image: "https://modern.b-cdn.net/wp-content/uploads/elementor/thumbs/icon-feature-6-oaa1t6p2xwqu8c8k16az7ihoqvxx27l3gedy4ywnsw.png",
+        name: "Live Customizer",
+        para: "To help you configure and customize stuff around your website without going into code. You can customize the URL slugs to your required ones"
+      }
+    ]
+    const feature2 = [
+      {
+        image: "https://modern.b-cdn.net/wp-content/uploads/elementor/thumbs/icon-design-variation-1-oaa1t7mxox0mhedjbe47mj8l8ogp9t243r0t44opa8.png",
+        name: "Design Variations",
+        para: "Real Homes theme includes two major design variations. You can use the classic or modern look based on your choice"
+      }
+    ]
+    const feature3 = [
+      {
+        image: "https://modern.b-cdn.net/wp-content/uploads/elementor/thumbs/icon-advance-search-oaa1t7mx4qs4jy76vopls095c9ta9wotsj1fm8v9mo.png",
+        name: "Advance Search",
+        para: "Real Homes includes advanced properties search feature that is powerful and fully customizable to fulfill various needs and  what data will be displayed in those fields."
+      }
+    ]
+    const feature4 = [
+      {
+        image: "https://modern.b-cdn.net/wp-content/uploads/elementor/thumbs/icon-google-maps-oaa1t7mx4qs4jy76vopls095c9ta9wotsj1fm8v9mo.png",
+        name: "Google & OpenStreet Maps",
+        para: "Real Homes includes Google Maps API integration that enables you to display Google map with properties markers on search results page, properties display pages."
+      }
+    ]
+    const feature5 = [
+      {
+        image: "https://modern.b-cdn.net/wp-content/uploads/elementor/thumbs/icon-members-oaa1t7mx4qs4jy76vopls095c9ta9wotsj1fm8v9mo.png",
+        name: "Member Support",
+        para: "You can provide user registration, login and forgot password features on your site to let users access member only features. Social login feature allow you to integrate."
+      }
+    ]
+    const feature6 = [
+      {
+        image: "https://modern.b-cdn.net/wp-content/uploads/elementor/thumbs/icon-property-upload-oaa1t7mx4qs4jy76vopls095c9ta9wotsj1fm8v9mo.png",
+        name: "Front End Property Submit",
+        para: "Real Homes provides front end property submit template and related configurations. So you can restrict certain level of users from accessing administrator dashboard."
+      }
+    ]
+
+
+
   return (     
     <>
       <MainDiv></MainDiv>
@@ -199,6 +252,18 @@ function App() {
       <AgentsDisplay component={agent3}></AgentsDisplay>
       <AgentsDisplay component={agent4}></AgentsDisplay>
     </div>
+
+    <EstateDisplay Display={component4}></EstateDisplay>
+  
+  <div className="features">
+    <Features component={feature1}></Features>
+    <Features component={feature2}></Features>
+    <Features component={feature3}></Features>
+    <Features component={feature4}></Features>
+    <Features component={feature5}></Features>
+    <Features component={feature6}></Features>
+  </div>
+
     </>
   )
 }

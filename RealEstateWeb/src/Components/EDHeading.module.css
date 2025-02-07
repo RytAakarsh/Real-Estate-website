@@ -22,6 +22,6 @@
     justify-content: center;
     font-size: 15px;
     color: #808080;
-    position: absolute;
-    left: 40%;
+    display: flex;
+    justify-content: center;
 }
