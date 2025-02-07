@@ -5,6 +5,7 @@ import EstateDisplay from './Components/EstateDisplay'
 import EstateImage from './Components/EstateImage'
 import '@fortawesome/fontawesome-free/css/all.css';
 import SpecialContainer from './Components/specialContainer'
+import AgentsDisplay from './Components/AgentsDisplay'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -49,6 +50,13 @@ function App() {
       Heading2: "Properties",
       Para: "View list of our short listed properties"
     }
+ ]
+ const component3 = [
+  {
+    Heading1: "Meet",
+    Heading2: "Our Agents",
+    Para: "Get in touch with our real estate experts"
+  }
  ]
 
  const SPcomponent1 = [
@@ -106,6 +114,43 @@ function App() {
     });
     }
 
+    const agent1 = [
+      {
+        image: "https://modern.b-cdn.net/wp-content/uploads/2015/07/agent-3-210x210.jpg",
+        Name: "James Rich",
+        Number: "+01-998-87733",
+        Mail: "jamesrich@gmail.io",
+        Num: "3"
+      }
+    ]
+    const agent2 = [
+      {
+        image: "https://modern.b-cdn.net/wp-content/uploads/2015/07/agent-female-00-210x210.jpg",
+        Name: "Melissa William",
+        Number: "+01-523-45223",
+        Mail: "melisa@gmail.io",
+        Num: "5"
+      }
+    ]
+    const agent3 = [
+      {
+        image: "https://modern.b-cdn.net/wp-content/uploads/2015/07/agent-4-210x210.jpg",
+        Name: "Alice Brian",
+        Number: "+01-786-64234",
+        Mail: "brianalice@gmail.io",
+        Num: "6"
+      }
+    ]
+    const agent4 = [
+      {
+        image: "https://modern.b-cdn.net/wp-content/uploads/2015/07/agent-male-00-210x210.jpg",
+        Name: "John David",
+        Number: "+01-653-57728",
+        Mail: "johndavid@gmail.io",
+        Num: "5"
+      }
+    ]
+
   return (     
     <>
       <MainDiv></MainDiv>
@@ -146,7 +191,14 @@ function App() {
      <SpecialContainer component={SPcomponent3}></SpecialContainer>
     </div>
     </div>
-    
+
+    <EstateDisplay Display={component3} className="displayComponent3"></EstateDisplay>
+    <div className="topAgents">
+      <AgentsDisplay component={agent1}></AgentsDisplay>
+      <AgentsDisplay component={agent2}></AgentsDisplay>
+      <AgentsDisplay component={agent3}></AgentsDisplay>
+      <AgentsDisplay component={agent4}></AgentsDisplay>
+    </div>
     </>
   )
 }

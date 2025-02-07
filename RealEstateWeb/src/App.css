@@ -91,3 +91,7 @@
     color: #fff;
     background-color: rgb(195, 176, 176);
 }
+.topAgents {
+    display: flex;
+    justify-content: space-evenly;
+}
