@@ -8,6 +8,7 @@ import SpecialContainer from './Components/specialContainer'
 import AgentsDisplay from './Components/AgentsDisplay'
 import Features from './Components/Features'
 import Partners from './Components/Partners'
+import QuickLinks from './Components/QuickLInks'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -235,7 +236,12 @@ function App() {
         image: "https://modern.b-cdn.net/wp-content/uploads/2017/06/five.png"
       }
     ]
-
+  
+    const link1 = "Home";
+    const link2 = "List Layout";
+    const link3 = "About Us";
+    const link4 = "Blog";
+    const link5 = "Contact Us";
 
   return (     
     <>
@@ -306,6 +312,48 @@ function App() {
      <Partners component={partner3}></Partners>
      <Partners component={partner4}></Partners>
      <Partners component={partner5}></Partners>
+  </div>
+
+  <div className="foot1">
+  </div> 
+  <div className="footer">
+       
+       
+        <div className="quickLinks">
+          <h4>Quick Links</h4>
+          <QuickLinks component={link1}></QuickLinks>
+          <QuickLinks component={link2}></QuickLinks>
+          <QuickLinks component={link3}></QuickLinks>
+          <QuickLinks component={link4}></QuickLinks>
+          <QuickLinks component={link5}></QuickLinks>
+        </div>
+
+        <div className="searchSec">
+      <h4>Remain Updated</h4>
+        <input type='text' placeholder='Enter Your Email'></input>
+        <button>Sign Up </button>
+      </div>
+        
+        <div className="details">
+          <h4> Contact Us </h4>
+        <p> <i class="fa-solid fa-location-dot" style={{color: "#bdbfc1" }}></i> <b className='address'>3015 Grand Ave, Coconut Grove, Merrick Way, FL 12345</b> </p>
+        <p> <i class="fa-solid fa-phone" style={{color: "#51555c"}}></i> +01-998-667-552</p>
+        <p> <i class="fa-solid fa-envelope" style={{color: "#46494e"}}></i> estateworld@.io</p>
+        </div>
+     
+  
+  </div>
+  <div className="socialfooter">
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-instagram"></i>
+  <i class="fa-brands fa-x-twitter"></i>
+  <i class="fa-brands fa-linkedin"></i>
+  <i class="fa-brands fa-youtube"></i>
+  </div>
+
+
+  <div className="credit">
+   <b>{'©'} All right and copyright reserved by Aakarsh Mishra </b>
   </div>
 
 
