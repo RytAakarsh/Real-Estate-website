@@ -4,7 +4,7 @@ import MainDiv from './Components/MainDiv'
 import EstateDisplay from './Components/EstateDisplay'
 import EstateImage from './Components/EstateImage'
 import '@fortawesome/fontawesome-free/css/all.css';
-import SpecialContainer from './Components/specialContainer'
+import SpecialContainer from "./Components/SpecialContainer";
 import AgentsDisplay from './Components/AgentsDisplay'
 import Features from './Components/Features'
 import Partners from './Components/Partners'
