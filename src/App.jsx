@@ -8,7 +8,7 @@ import SpecialContainer from "./Components/SpecialContainer";
 import AgentsDisplay from './Components/AgentsDisplay'
 import Features from './Components/Features'
 import Partners from './Components/Partners'
-import QuickLinks from './Components/QuickLInks'
+import QuickLinks from './Components/QuickLinks'
 
 function App() {
   const [count, setCount] = useState(0)
