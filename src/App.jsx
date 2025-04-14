@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './App.css'
 import MainDiv from './Components/MainDiv'
 import EstateDisplay from './Components/EstateDisplay'
@@ -11,6 +11,25 @@ import Partners from './Components/Partners'
 import QuickLinks from './Components/QuickLinks'
 
 function App() {
+  useEffect(() => {
+    // Dynamically load the chatbot script
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/gh/funtastic418/chat-widget@main/chat-widget.js';
+    script.async = true;
+    script.onload = () => {
+      if (window.ChatWidgetConfig && window.ChatWidget) {
+        window.ChatWidget.init(window.ChatWidgetConfig);
+        console.log('Chatbot initialized');
+      } else {
+        console.error('ChatWidgetConfig or ChatWidget is missing');
+      }
+    };
+    script.onerror = () => {
+      console.error('Failed to load ChatWidget script');
+    };
+    document.body.appendChild(script);
+  }, []);
+
   const [count, setCount] = useState(0)
   const propertyComp1 = [
    { 
